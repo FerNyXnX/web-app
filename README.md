@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# 🎬 MovieExplorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Una aplicación web moderna para explorar películas usando React, Redux Toolkit, y la API de TMDB.
 
-## Available Scripts
+## 🚀 Características
 
-In the project directory, you can run:
+- ✨ Exploración de películas populares, mejor valoradas y próximos estrenos
+- 🔍 Búsqueda en tiempo real con debounce
+- ❤️ Sistema de favoritos con persistencia en localStorage
+- 📱 Diseño totalmente responsive
+- 🎨 Interfaz moderna con styled-components
+- 🧪 Tests completos con Jest (>85% cobertura)
+- ⚡ Manejo de estado eficiente con Redux Toolkit
 
-### `npm start`
+## 🛠️ Tecnologías
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React 18** - Biblioteca de interfaz de usuario
+- **Redux Toolkit** - Manejo de estado
+- **React Router DOM** - Navegación
+- **Axios** - Cliente HTTP
+- **Styled Components** - Estilos en JS
+- **Jest & React Testing Library** - Testing
+- **TMDB API** - Datos de películas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📋 Requisitos Previos
 
-### `npm test`
+- Node.js >= 14.0.0
+- npm >= 6.0.0
+- Cuenta en [TMDB](https://www.themoviedb.org/) para obtener API Key
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🔧 Instalación
 
-### `npm run build`
+1. Clona el repositorio:
+```bash
+git clone https://github.com/tu-usuario/movie-explorer.git
+cd movie-explorer
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Instala las dependencias:
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Crea un archivo `.env` en la raíz del proyecto:
+```env
+REACT_APP_TMDB_API_KEY=tu_api_key_aqui
+REACT_APP_TMDB_BASE_URL=https://api.themoviedb.org/3
+REACT_APP_TMDB_IMAGE_BASE_URL=https://image.tmdb.org/t/p
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Inicia la aplicación:
+```bash
+npm start
+```
 
-### `npm run eject`
+La aplicación estará disponible en `http://localhost:3000`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🧪 Ejecutar Tests
+```bash
+# Ejecutar todos los tests
+npm test
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Ejecutar tests con cobertura
+npm run test:coverage
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📦 Build para Producción
+```bash
+npm run build
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🗂️ Estructura del Proyecto
+```
+movie-explorer/
+├── public/
+├── src/
+│   ├── __tests__/          # Tests unitarios
+│   ├── components/         # Componentes React
+│   ├── hooks/             # Custom hooks
+│   ├── pages/             # Páginas/vistas
+│   ├── redux/             # Store y slices
+│   ├── services/          # APIs y servicios
+│   ├── styles/            # Estilos globales y tema
+│   └── utils/             # Utilidades y helpers
+└── package.json
+```
 
-## Learn More
+## 🎨 Diseño UX/UI
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+El diseño se basa en:
+- **User Persona**: María González, diseñadora de 28 años, amante del cine
+- **Paleta de colores**: Negro, rojo (#e50914), y tonos grises
+- **Tipografía**: Segoe UI para mejor legibilidad
+- **Mobile-first**: Diseño responsive desde 320px
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤝 Contribuir
 
-### Code Splitting
+Las contribuciones son bienvenidas. Por favor:
+1. Haz fork del proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'feat(scope): add amazing feature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📄 Licencia
 
-### Analyzing the Bundle Size
+Este proyecto es de código abierto y está disponible bajo la Licencia MIT.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 👤 Autor
 
-### Making a Progressive Web App
+Fernando - [@FerNyXnX](https://github.com/FerNyXnX)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🙏 Agradecimientos
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [TMDB](https://www.themoviedb.org/) por proporcionar la API
+- Comunidad de React por las increíbles herramientas
