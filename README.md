@@ -9,7 +9,7 @@ Una aplicación web moderna para explorar películas usando React, Redux Toolkit
 - ❤️ Sistema de favoritos con persistencia en localStorage
 - 📱 Diseño totalmente responsive
 - 🎨 Interfaz moderna con styled-components
-- 🧪 Tests completos con Jest (>85% cobertura)
+- 🧪 Tests completos con Jest
 - ⚡ Manejo de estado eficiente con Redux Toolkit
 
 ## 🛠️ Tecnologías
